@@ -1,0 +1,122 @@
+/* Estilos para dispositivos con un ancho mínimo de 320px */
+@media (min-width: 320px) {
+
+  /* Estilos generales para el formulario */
+  form {
+    display: flex; /* Utiliza Flexbox para alinear los elementos dentro del formulario */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-direction: column; /* Los elementos se colocan en una columna */
+  }
+
+  /* Estilo del encabezado dentro de .form-head */
+  .form-head h1 {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 5px; /* Margen inferior de 5px */
+  }
+
+  /* Estilo del separador horizontal en .form-head */
+  .form-head hr {
+    margin: auto; /* Centra el separador horizontal */
+    width: 100px; /* Ancho de 100px */
+    border: 1px solid #909fee; /* Borde sólido de 1px con color #909fee */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+  }
+
+  /* Estilo para cada grupo de formulario */
+  .form-group {
+    margin: 15px 0; /* Márgenes superior e inferior de 15px */
+  }
+
+  /* Estilo para las etiquetas de los campos del formulario */
+  label {
+    display: block; /* Hace que cada etiqueta ocupe toda la línea */
+  }
+
+  /* Estilo para los campos de entrada (input) dentro del formulario */
+  form input {
+    height: 20px; /* Altura de 20px */
+  }
+
+  /* Estilo para los campos de selección (select) dentro del formulario */
+  form select {
+    height: 27px; /* Altura de 27px */
+    padding-right: 50px; /* Espacio de 50px en el lado derecho */
+  }
+
+  /* Estilo para el área de texto (textarea) dentro del formulario */
+  form textarea {
+    font-family: "Josefin Sans", sans-serif; /* Aplica la fuente especificada */
+  }
+
+  /* Estilo para el botón del formulario */
+  form button {
+    padding: 5px 10px; /* Relleno interno de 5px vertical y 10px horizontal */
+    border: none; /* Sin borde */
+    font-size: 15px; /* Tamaño de fuente de 15px */
+    color: white; /* Color del texto blanco */
+    background: #6078ea; /* Color de fondo del botón */
+    border-radius: 3px; /* Bordes redondeados de 3px */
+  }
+
+  /* Estilo para el pie de página */
+  footer {
+    margin-top: 50px; /* Margen superior de 50px */
+  }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 768px (tabletas y superiores) */
+@media (min-width: 768px) {
+  /* Ajustes de estilo para el encabezado dentro de .form-head */
+  .form-head h1 {
+    font-size: 50px; /* Tamaño de fuente de 50px */
+  }
+
+  /* Ajustes de estilo para el separador horizontal en .form-head */
+  .form-head hr {
+    width: 130px; /* Ancho de 130px */
+  }
+
+  /* Ajustes de estilo para las etiquetas de los campos del formulario */
+  label {
+    font-size: 25px; /* Tamaño de fuente de 25px */
+  }
+
+  /* Ajustes de estilo para los campos de entrada (input) */
+  form input {
+    height: 25px; /* Altura de 25px */
+    width: 250px; /* Ancho de 250px */
+  }
+
+  /* Ajustes de estilo para los campos de selección (select) */
+  form select {
+    height: 32px; /* Altura de 32px */
+    width: 256px; /* Ancho de 256px */
+  }
+
+  /* Ajustes de estilo para el área de texto (textarea) */
+  form textarea {
+    width: 250px; /* Ancho de 250px */
+    font-size: 18px; /* Tamaño de fuente de 18px */
+    height: 80px; /* Altura de 80px */
+  }
+
+  /* Ajustes de estilo para el botón del formulario */
+  form button {
+    font-size: 20px; /* Tamaño de fuente de 20px */
+    padding: 10px 20px; /* Relleno interno de 10px vertical y 20px horizontal */
+    margin-top: 10px; /* Margen superior de 10px */
+  }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 1024px (desktops y superiores) */
+@media (min-width: 1024px) {
+  /* Estilos para el botón del formulario al pasar el ratón por encima */
+  form button:hover {
+    cursor: pointer; /* Cambia el cursor a pointer indicando que es clicable */
+    line-height: 1.1em; /* Ajusta la altura de línea */
+    border: solid 1px white; /* Agrega un borde blanco sólido de 1px */
+    opacity: 0.8; /* Reduce la opacidad a 0.8 para un efecto de transparencia */
+  }
+}

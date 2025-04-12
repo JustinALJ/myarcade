@@ -1,0 +1,51 @@
+/* Estilos para dispositivos móviles (pantallas de al menos 320px de ancho) */
+@media (min-width: 320px) {
+  
+  /* Estilos generales del artículo */
+  article {
+    font-size: 20px; /* Tamaño de fuente para el contenido del artículo */
+  }
+
+  /* Estilos específicos para los párrafos dentro del artículo */
+  article p {
+    padding: 15px; /* Espaciado interno (padding) de 15px en los párrafos */
+  }
+
+  /* Estilos específicos para el encabezado h1 dentro del artículo */
+  article h1 {
+    text-align: center; /* Alineación centrada para el texto del h1 */
+    margin: 20px 0 5px 0; /* Márgenes superior de 20px, inferior de 5px */
+    font-size: 40px; /* Tamaño de fuente de 40px para el h1 */
+  }
+
+  /* Estilos específicos para el separador hr dentro del artículo */
+  article hr {
+    margin: auto; /* Centra el separador horizontal */
+    border: solid 1px #909fee; /* Borde sólido de 1px con color #909fee */
+    width: 130px; /* Ancho del separador de 130px */
+  }
+
+  /* Estilos para el pie de página (footer) */
+  footer {
+    margin-top: 50px; /* Margen superior de 50px */
+  }
+}
+
+/* Estilos para dispositivos con pantallas de al menos 768px de ancho (tabletas y superiores) */
+@media (min-width: 768px) {
+
+  /* Ajustes en el tamaño de fuente del artículo para pantallas más grandes */
+  article {
+    font-size: 22px; /* Tamaño de fuente de 22px */
+  }
+
+  /* Ajustes en el espaciado de los párrafos dentro del artículo */
+  article p {
+    padding: 20px; /* Espaciado interno de 20px */
+  }
+
+  /* Ajustes en el margen del pie de página para pantallas más grandes */
+  footer {
+    margin: 0; /* Elimina los márgenes para el footer */
+  }
+}

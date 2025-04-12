@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8" /> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Configuración de la escala de la página para dispositivos móviles -->
+    <title>My-Arcade | Contacto</title> <!-- Título de la página -->
+
+    <!-- Enlaces a las hojas de estilo CSS -->
+    <link rel="stylesheet" href="style.css" /> <!-- Hoja de estilo principal -->
+    <link rel="stylesheet" href="contact.css" /> <!-- Hoja de estilo específica para la página de contacto -->
+
+    <!-- Fuente personalizada de Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Icono del sitio (favicon) -->
+    <link rel="shortcut icon" href="favicon.png" />
+  </head>
+
+  <body>
+    <!-- Encabezado del sitio -->
+    <header>
+      <div class="container">
+        <!-- Sección de branding con logo y nombre del sitio -->
+        <div id="branding">
+          <img src="./images/logo.png" alt="website logo" /> <!-- Logo del sitio web -->
+          <h1>My-Arcade</h1> <!-- Nombre del sitio web -->
+        </div>
+        
+        <!-- Navegación del sitio -->
+        <nav>
+          <span id="openbtn">&equiv;</span> <!-- Botón para abrir el menú en dispositivos móviles -->
+        </nav>
+      </div>
+
+      <div class="clear"></div> <!-- Limpia flotantes -->
+
+      <!-- Menú desplegable en dispositivos móviles -->
+      <div id="overlay">
+        <span id="closebtn">&times;</span> <!-- Botón para cerrar el menú -->
+        <ul id="overlay-list">
+          <!-- Enlaces de navegación del menú -->
+          <li><a href="home.html">Inicio</a></li>
+          <li><a href="about.html">Acerca de nosotros</a></li>
+          <li><a href="home.html#games">Juegos</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="clear"></div> <!-- Limpia flotantes -->
+
+    <!-- Encabezado del formulario de contacto -->
+    <div class="form-head">
+      <div class="container">
+        <h1>Contáctanos</h1>
+        <hr /> <!-- Línea horizontal de separación -->
+      </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <form name="contact" netlify>
+      <!-- Grupo de formulario para el nombre -->
+      <div class="form-group">
+        <label>Nombre</label> <!-- Etiqueta del campo de nombre -->
+        <input
+          type="name"
+          name="Name"
+          placeholder="Tu Nombre"
+          required
+        /> <!-- Campo de entrada para el nombre, obligatorio -->
+      </div>
+
+      <!-- Grupo de formulario para el correo electrónico -->
+      <div class="form-group">
+        <label>Correo</label> <!-- Etiqueta del campo de correo -->
+        <input
+          type="email"
+          name="Email"
+          placeholder="juan@ejemplo.com"
+          required
+        /> <!-- Campo de entrada para el correo electrónico, obligatorio -->
+      </div>
+
+      <!-- Grupo de formulario para seleccionar el tema del mensaje -->
+      <div class="form-group">
+        <label>Tema</label> <!-- Etiqueta del campo de selección -->
+        <select name="Topic">
+          <option>Necesitas ayuda</option>
+          <option>Sugerencias</option>
+          <option>Contáctanos</option>
+          <option>Preguntas</option>
+          <option>Otro</option>
+        </select> <!-- Menú desplegable para seleccionar el tema del mensaje -->
+      </div>
+
+      <!-- Grupo de formulario para el mensaje -->
+      <div class="form-group">
+        <label>Tu mensaje</label> <!-- Etiqueta para el área de texto -->
+        <textarea
+          class="form-control"
+          name="Message"
+          cols="23"
+          rows="4"
+        ></textarea> <!-- Área de texto para escribir el mensaje -->
+      </div>
+
+      <!-- Grupo de formulario para el botón de envío -->
+      <div class="form-group">
+        <button type="submit">Enviar</button> <!-- Botón de envío del formulario -->
+      </div>
+    </form>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>My-Arcade &copy; 2024 Por Justin, Todos los derechos reservados</p> <!-- Mensaje de derechos de autor -->
+    </footer>
+
+    <!-- Enlace al archivo JavaScript global -->
+    <script src="global.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Definición del tipo de documento como HTML5 -->
+<html lang="es-es">
+  <head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8" /> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Configuración de la escala de la página para dispositivos móviles -->
+    <title>My-Arcade | Sobre nosotros</title> <!-- Título de la página -->
+    
+    <!-- Enlaces a las hojas de estilo CSS -->
+    <link rel="stylesheet" href="style.css" /> <!-- Hoja de estilo principal -->
+    <link rel="stylesheet" href="about.css" /> <!-- Hoja de estilo específica para la página "about" -->
+    
+    <!-- Fuente personalizada de Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Icono del sitio (favicon) -->
+    <link rel="shortcut icon" href="favicon.png" />
+  </head>
+
+  <body>
+    <!-- Encabezado del sitio -->
+    <header>
+      <div class="container">
+        <!-- Sección de branding con logo y nombre del sitio -->
+        <div id="branding">
+          <img src="./images/logo.png" alt="website logo" /> <!-- Logo del sitio web -->
+          <h1>My-Arcade</h1> <!-- Nombre del sitio web -->
+        </div>
+        
+        <!-- Navegación del sitio -->
+        <nav>
+          <span id="openbtn">&equiv;</span> <!-- Botón para abrir el menú en dispositivos móviles -->
+        </nav>
+      </div>
+
+      <div class="clear"></div> <!-- Limpia flotantes -->
+
+      <!-- Menú desplegable en dispositivos móviles -->
+      <div id="overlay">
+        <span id="closebtn">&times;</span> <!-- Botón para cerrar el menú -->
+        <ul id="overlay-list">
+          <!-- Enlaces de navegación del menú -->
+          <li><a href="home.html">Inicio</a></li>
+          <li><a href="about.html">Acerca de nosotros</a></li>
+          <li><a href="home.html#games">Juegos</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="clear"></div> <!-- Limpia flotantes -->
+
+    <!-- Contenido principal de la página -->
+    <div class="container">
+      <article>
+        <h1>Acerca de nosotros</h1>
+        <hr /> <!-- Línea horizontal de separación -->
+        <p style="background: #c2c9f3">
+          Hola a todos en My-Arcade! Soy el creador de este sitio web para la clase de diseño web.
+        </p>
+        <p>
+          Yo soy Justin, si estás interesado en el origen de My-Arcade.<br />
+          Todo comenzó cuando el Mr Daniel dejó de tarea crear un sitio web.
+        </p>
+        <p>
+          Si quieren contactarnos, pueden hacerlo clicando <a href="contact.html">aquí</a>.
+        </p>
+      </article>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>My-Arcade &copy; 2024 Por Justin, Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript global -->
+    <script src="global.js"></script>
+  </body>
+</html>
